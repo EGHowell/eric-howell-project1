@@ -24,16 +24,19 @@
     <main class="wrapper">
         <section>
             <h1>GET IN TOUCH</h1>
-            <form action="submit.php" method="POST">
-                <fieldset>
-                    <label for="name" class="visuallyHidden">name</label>
-                    <input type="text" name="use-name" id="name" placeholder="Name">
-                    <label for="email" class="visuallyHidden"></label>
-                    <input type="email" name="user-email" id="email" placeholder="Email address">
-                </fieldset>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
-                <button type="submit">SUBMIT</button>
-            </form>
+            <div class="background-design">
+                <div class="background-lightblue"></div>
+                <form action="submit.php" method="POST">
+                    <fieldset>
+                        <label for="name" class="visuallyHidden">name</label>
+                        <input type="text" name="use-name" id="name" placeholder="Name">
+                        <label for="email" class="visuallyHidden"></label>
+                        <input type="email" name="user-email" id="email" placeholder="Email address">
+                    </fieldset>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
 
             <aside>
                 <div class="social-icons">
@@ -52,8 +55,10 @@
                     </ul>
                 </div>
             </aside>
-            
         </section>
     </main>
+    <footer>
+        <p>Copyright &copy; 2021 Juno College</p>
+    </footer>
 </body>
 </html>
