@@ -1,11 +1,12 @@
+// General
 .wrapper {
-    max-width: 1250px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 }
 img {
     display: block;
-    // width: 100%;
+    width: 100%;
     height: auto;
 }
 h1, h2, h3, h4, p, ul, li, a, fieldset, input, label, textarea, button, i{
@@ -17,4 +18,105 @@ li {
 }
 a {
 	text-decoration: none;
+}
+
+// Nav layout
+nav ul {
+    display: flex;
+    justify-content: end;
+    li {
+        padding: 0 20px;
+        margin-top: 20px;
+        a:hover {
+            color: $color2;
+        }
+    }
+}
+
+// Box shadow
+.background-design {
+    box-shadow: -30px 30px $color2;
+}
+.background-design2 {
+    box-shadow: 30px 30px $color2;
+}
+
+// Text stylings
+h1 {
+    @include h1;
+}
+h2 {
+    @include h2;
+}
+h3 {
+    @include h3;
+}
+h4 {
+    @include h4;
+}
+nav {
+    @include nav;
+}
+a {
+    @include button(white);
+}
+p {
+    @include body;
+}
+
+// Form
+form{
+    padding-left: 10px;
+}
+input,
+textarea {
+    background-color: $color3;
+    @include body;
+    padding: 10px;
+    border: none;
+}
+input {
+    width: calc(50% - 12px);
+    margin-bottom: 20px;
+    border-bottom: 2px solid $color2;
+}
+#name {
+    margin-right: 10px;
+    padding-left: 20px;
+}
+input:last-child {
+    margin-left: 10px;
+    padding-left: 20px;
+}
+fieldset {
+    border: none;
+}
+input:focus,
+textarea:focus {
+    outline: none
+}
+textarea{
+    resize: none;
+    border: 2px solid $color2;
+}
+button {
+    display: block;
+    @include button($color1);
+    width: 100%;
+    background-color: black;
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+// Footer
+footer {
+    background-color: $color2;
+    position: relative;
+    bottom:0;
+    p {
+        color: $color4;
+        text-align: center;
+    }
 }

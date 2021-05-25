@@ -1,0 +1,105 @@
+// Header
+.blog header {
+    background-image: url(./under-the-sea-assets/blog-header.jpg);
+    height: 50vh;
+    background-size: cover;
+}
+
+// Main
+.blog main {
+    background-color: $color4;
+}
+.blog .main {
+    display: flex;
+    justify-content: space-between;
+}
+.blog section {
+    width: 60%;
+    position: relative;
+    bottom: 300px;
+    margin-bottom:-330px;
+    .background-design{
+        width: 116%;
+        height: 20%;
+    }
+}
+
+// Aside
+.blog aside {
+    width: 30%;
+    margin-top: 150px;
+    img {
+        width: 135%;
+        position: relative;
+        right: 180px;
+        height: 15%;
+        box-shadow: 20px 0px $color3;
+    }
+}
+.blog .aside-info {
+    background-color: $color3;
+    position: relative;
+    left: 8px;
+}
+.blog .aside-info-paragraphs{
+    padding: 27px 60px 40px 20px;
+    h4 {
+        padding-bottom: 10px;
+    }
+}
+.blog .aside-info-paragraphs ul {
+    @include body;
+    li {
+        list-style: disc;
+        list-style-position: inside;
+    }
+}
+
+// Info div
+.info  h3 {
+    padding-top: 50px;
+}
+.info p:nth-child(2) {
+    margin-bottom: 50px;
+}
+.info {
+    border-bottom: 4px solid $color2;
+    border-left: 4px solid $color2;
+    margin-left: -30px;
+    padding-left: 30px;
+}
+
+// Comments
+.comments-all {
+    display: flex;
+    padding: 40px 0;
+}
+.comments-info {
+    padding-left: 25px;
+}
+.comments h3 {
+    padding: 20px 0;
+}
+.comments p:first-child {
+    margin-bottom: 8px;
+    margin-top: -8px;
+}
+.comments img {
+    height: 100px;
+    width: 100px;
+}
+
+// Form
+.blog form {
+    background-color: $color4;
+}
+.blog input,
+.blog textarea {
+    background-color: $color4;
+}
+.blog textarea {
+    width: 100%;
+}
+.blog button {
+    background-color: $color3;
+}

@@ -1,8 +1,15 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap');
 @import 'setup';
 @import 'general';
-@import 'nav';
 
+// Index page
+@import 'index';
 
+// Blog page
+@import 'blog';
+
+// Contact page
+@import 'contact';
 
 @import 'media';

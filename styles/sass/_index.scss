@@ -1,0 +1,18 @@
+// Header
+.index header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./under-the-sea-assets/header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: top;
+    height: 80vh;
+}
+.index .header-info {
+    display: flex;
+    margin-top: 120px;
+}
+.index header img {
+    position: absolute;
+    right:0;
+    width: 50%;
+}

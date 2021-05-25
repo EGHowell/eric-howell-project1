@@ -1,0 +1,48 @@
+// Header
+.contact header {
+    background-image: url(./under-the-sea-assets/contact-header.jpg);
+    height: 50vh;
+}
+
+// Body
+.contact main {
+    background-color: $color4;
+    height: 50vh;
+}
+.contact section {
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.right-side {
+    position: absolute;
+    bottom: 0px;
+    right: -80px;
+}
+.right-side h2 {
+    padding-bottom: 15px;
+}
+.contact aside {
+    order: -1;
+    margin-top: 100px;
+}
+
+// Form
+.contact .background-design {
+    background-color: $color3;
+    padding: 50px 50px 10px 50px;
+}
+
+// Site info
+.contact .site-info {
+    @include  body;
+}
+.contact .social-icons{
+    @include h4;
+    i {
+        padding: 10px;
+    }
+}
+.contact i:first-child{
+    padding-left: 0;
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -250,13 +251,14 @@ html {
 }
 
 .wrapper {
-  max-width: 1250px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
 }
 
 img {
   display: block;
+  width: 100%;
   height: auto;
 }
 
@@ -271,4 +273,361 @@ li {
 
 a {
   text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+nav ul li {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+nav ul li a:hover {
+  color: #86e0f9;
+}
+
+.background-design {
+  -webkit-box-shadow: -30px 30px #86e0f9;
+          box-shadow: -30px 30px #86e0f9;
+}
+
+.background-design2 {
+  -webkit-box-shadow: 30px 30px #86e0f9;
+          box-shadow: 30px 30px #86e0f9;
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 138px;
+  line-height: 126px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Barlow", sans-serif;
+  font-size: 80px;
+  line-height: 92px;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: "Barlow", sans-serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+h4 {
+  font-family: "Barlow", sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+nav {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+a {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+form {
+  padding-left: 10px;
+}
+
+input,
+textarea {
+  background-color: #0f614e;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+}
+
+input {
+  width: calc(50% - 12px);
+  margin-bottom: 20px;
+  border-bottom: 2px solid #86e0f9;
+}
+
+#name {
+  margin-right: 10px;
+  padding-left: 20px;
+}
+
+input:last-child {
+  margin-left: 10px;
+  padding-left: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  border: 2px solid #86e0f9;
+}
+
+button {
+  display: block;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  width: 100%;
+  background-color: black;
+  border: none;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #86e0f9;
+  position: relative;
+  bottom: 0;
+}
+footer p {
+  color: #0c1423;
+  text-align: center;
+}
+
+.index header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./under-the-sea-assets/header-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./under-the-sea-assets/header-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: top;
+  height: 80vh;
+}
+
+.index .header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 120px;
+}
+
+.index header img {
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+.blog header {
+  background-image: url(./under-the-sea-assets/blog-header.jpg);
+  height: 50vh;
+  background-size: cover;
+}
+
+.blog main {
+  background-color: #0c1423;
+}
+
+.blog .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog section {
+  width: 60%;
+  position: relative;
+  bottom: 300px;
+  margin-bottom: -330px;
+}
+.blog section .background-design {
+  width: 116%;
+  height: 20%;
+}
+
+.blog aside {
+  width: 30%;
+  margin-top: 150px;
+}
+.blog aside img {
+  width: 135%;
+  position: relative;
+  right: 180px;
+  height: 15%;
+  -webkit-box-shadow: 20px 0px #0f614e;
+          box-shadow: 20px 0px #0f614e;
+}
+
+.blog .aside-info {
+  background-color: #0f614e;
+  position: relative;
+  left: 8px;
+}
+
+.blog .aside-info-paragraphs {
+  padding: 27px 60px 40px 20px;
+}
+.blog .aside-info-paragraphs h4 {
+  padding-bottom: 10px;
+}
+
+.blog .aside-info-paragraphs ul {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.blog .aside-info-paragraphs ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.info h3 {
+  padding-top: 50px;
+}
+
+.info p:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+.info {
+  border-bottom: 4px solid #86e0f9;
+  border-left: 4px solid #86e0f9;
+  margin-left: -30px;
+  padding-left: 30px;
+}
+
+.comments-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+
+.comments-info {
+  padding-left: 25px;
+}
+
+.comments h3 {
+  padding: 20px 0;
+}
+
+.comments p:first-child {
+  margin-bottom: 8px;
+  margin-top: -8px;
+}
+
+.comments img {
+  height: 100px;
+  width: 100px;
+}
+
+.blog form {
+  background-color: #0c1423;
+}
+
+.blog input,
+.blog textarea {
+  background-color: #0c1423;
+}
+
+.blog textarea {
+  width: 100%;
+}
+
+.blog button {
+  background-color: #0f614e;
+}
+
+.contact header {
+  background-image: url(./under-the-sea-assets/contact-header.jpg);
+  height: 50vh;
+}
+
+.contact main {
+  background-color: #0c1423;
+  height: 50vh;
+}
+
+.contact section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  position: relative;
+}
+
+.right-side {
+  position: absolute;
+  bottom: 0px;
+  right: -80px;
+}
+
+.right-side h2 {
+  padding-bottom: 15px;
+}
+
+.contact aside {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-top: 100px;
+}
+
+.contact .background-design {
+  background-color: #0f614e;
+  padding: 50px 50px 10px 50px;
+}
+
+.contact .site-info {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.contact .social-icons {
+  font-family: "Barlow", sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.contact .social-icons i {
+  padding: 10px;
+}
+
+.contact i:first-child {
+  padding-left: 0;
 }
