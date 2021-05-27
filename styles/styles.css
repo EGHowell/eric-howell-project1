@@ -667,15 +667,16 @@ footer p {
   padding-bottom: 10px;
 }
 
-.blog .aside-info-paragraphs ul {
+.blog .aside-info-paragraphs ul li {
+  list-style: disc;
+  list-style-position: inside;
+  color: #ffffff;
+}
+.blog .aside-info-paragraphs ul li a {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
-}
-.blog .aside-info-paragraphs ul li {
-  list-style: disc;
-  list-style-position: inside;
 }
 
 .blog section h2 {
@@ -737,6 +738,10 @@ footer p {
 
 .blog button {
   background-color: #0f614e;
+}
+
+.blog button:hover {
+  background-color: gray;
 }
 
 .contact header {
@@ -807,6 +812,107 @@ footer p {
   color: #86e0f9;
 }
 
+@media (max-width: 1595px) {
+  .blog aside img {
+    position: initial;
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 8px 0px #0f614e;
+            box-shadow: 8px 0px #0f614e;
+  }
+
+  .blog section .background-design {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog form {
+    padding-right: 20px;
+  }
+
+  .blog section {
+    bottom: 350px;
+  }
+
+  .blog button {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 1050px) {
+  .blog .aside-info-paragraphs {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .blog section p {
+    padding-right: 25px;
+  }
+
+  .comments p:first-child {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .blog .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blog aside {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    margin-top: 0;
+  }
+  .blog aside img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .blog .aside-info {
+    left: 0;
+  }
+
+  .blog section {
+    width: 100%;
+  }
+  .blog section .background-design {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .blog .info p:nth-child(3) {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 425px) {
+  .blog nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog nav ul li {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .blog section h2 {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+  .blog .comments-all {
+    padding: 20px 0;
+  }
+
+  .blog .comments p:first-child {
+    font-size: 25px;
+  }
+}
 @media (max-width: 1780px) {
   .right-side {
     right: 0;

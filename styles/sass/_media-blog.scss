@@ -1,0 +1,83 @@
+// Blog page
+@media (max-width: 1595px) {
+    .blog aside img {
+        position:initial;
+        width: 100%;
+        height: auto;
+        box-shadow: 8px 0px $color3;
+    }
+    .blog section .background-design {
+        width: 100%;
+        height: auto;
+    }
+    .blog form {
+        padding-right: 20px;
+    }
+    .blog section {
+        bottom: 350px;
+    }
+    .blog button {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .blog .aside-info-paragraphs {
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .blog section p {
+        padding-right: 25px;
+    }
+    .comments p:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog .main {
+        flex-direction: column;
+    }
+    .blog aside {
+        order: 1;
+        width: 100%;
+        margin-top: 0;
+        img {
+            box-shadow: none;
+        }
+    }
+    .blog .aside-info {
+        left: 0;
+    }
+    .blog section {
+        width: 100%;
+        .background-design {
+            box-shadow: none;
+        }
+    }
+    .blog .info p:nth-child(3) {
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .blog nav ul {
+        flex-direction: column;
+        li {
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+    .blog section h2{
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+    .blog .comments-all {
+        padding: 20px 0;
+    }
+    .blog .comments p:first-child {
+        font-size: 25px;
+    }
+}
