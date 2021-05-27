@@ -1,6 +1,6 @@
 // Header
 .blog header {
-    background-image: url(./under-the-sea-assets/blog-header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(./under-the-sea-assets/blog-header.jpg);
     height: 50vh;
     background-size: cover;
 }
@@ -56,6 +56,9 @@
 }
 
 // Info div
+.blog section h2 {
+    padding-bottom: 30px;
+}
 .info  h3 {
     padding-top: 50px;
 }

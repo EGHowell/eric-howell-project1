@@ -16,3 +16,117 @@
     right:0;
     width: 50%;
 }
+
+// page-one
+.page-one {
+    background-color: $color4;
+    height: 70vh;
+    text-align: center;
+    div {
+        position: relative;
+        top: 250px;
+        padding: 0 100px;
+        p {
+            padding-bottom: 40px;
+        }
+        h3 {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+// page-two
+.page-two {
+    background-color: $color3;
+}
+.page-two-addition img{
+    float: left;
+    width: 45%;
+    margin-right: 200px;
+    position: relative;
+    bottom: 29px;
+}
+.page-two-nemo img {
+    float: right;
+    width: 45%;
+    margin-left: 200px;
+    position: relative;
+    top: 29px;
+}
+.page-two-nemo  div:nth-child(2) {
+text-align: right;
+}
+.page-two-text {
+    padding-top: 100px;
+    h4 {
+        padding-bottom: 20px;
+    }
+    p {
+        padding-bottom: 40px;
+    }
+}
+
+//page-three
+.page-three {
+    background-color: $color4;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.page-three-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-three-text {
+    width: 50%;
+    padding-bottom: 50px;
+    p {
+        padding-left: 70px;
+    }
+    h4 {
+        padding-bottom: 20px;
+    }
+}
+.page-three-text:nth-child(2n) {
+    padding-left: 40px;
+}
+.index i {
+    background-color: $color2;
+    color: $color4;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+// page-five
+.page-five {
+    background-color: $color4;
+}
+.page-five .wrapper{
+    display: flex;
+    padding: 90px 0;
+}
+.page-five img{
+    order: -1;
+}
+.page-five-info {
+    margin-left: 100px;
+    p {
+        padding-bottom: 50px; 
+    }
+    h3 {
+        padding-bottom: 25px;
+    }
+}
+
+// page-six
+.page-six {
+    background-color: $color3;
+}
+.page-six-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    img {
+        width: 31%
+    }
+}

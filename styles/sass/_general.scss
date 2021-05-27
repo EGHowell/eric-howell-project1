@@ -41,6 +41,26 @@ nav ul {
     box-shadow: 30px 30px $color2;
 }
 
+// Button layout
+.find {
+    @include button($color4);
+    background-color: $color2;
+    padding: 15px 30px;
+    border-radius: 3px;
+}
+.find:hover {
+        background-color: $color1;
+    }
+
+.read {
+    @include button($color1);
+    background-color: black;
+    padding: 10px 20px;
+}
+.read:hover {
+    background-color: $color2;
+}
+
 // Text stylings
 h1 {
     @include h1;
@@ -99,6 +119,7 @@ textarea{
     resize: none;
     border: 2px solid $color2;
 }
+// Form button
 button {
     display: block;
     @include button($color1);

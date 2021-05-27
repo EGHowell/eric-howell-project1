@@ -301,6 +301,35 @@ nav ul li a:hover {
           box-shadow: 30px 30px #86e0f9;
 }
 
+.find {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #0c1423;
+  background-color: #86e0f9;
+  padding: 15px 30px;
+  border-radius: 3px;
+}
+
+.find:hover {
+  background-color: #ffffff;
+}
+
+.read {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.read:hover {
+  background-color: #86e0f9;
+}
+
 h1 {
   font-family: "Barlow", sans-serif;
   font-size: 138px;
@@ -445,8 +474,141 @@ footer p {
   width: 50%;
 }
 
+.page-one {
+  background-color: #0c1423;
+  height: 70vh;
+  text-align: center;
+}
+.page-one div {
+  position: relative;
+  top: 250px;
+  padding: 0 100px;
+}
+.page-one div p {
+  padding-bottom: 40px;
+}
+.page-one div h3 {
+  padding-bottom: 20px;
+}
+
+.page-two {
+  background-color: #0f614e;
+}
+
+.page-two-addition img {
+  float: left;
+  width: 45%;
+  margin-right: 200px;
+  position: relative;
+  bottom: 29px;
+}
+
+.page-two-nemo img {
+  float: right;
+  width: 45%;
+  margin-left: 200px;
+  position: relative;
+  top: 29px;
+}
+
+.page-two-nemo div:nth-child(2) {
+  text-align: right;
+}
+
+.page-two-text {
+  padding-top: 100px;
+}
+.page-two-text h4 {
+  padding-bottom: 20px;
+}
+.page-two-text p {
+  padding-bottom: 40px;
+}
+
+.page-three {
+  background-color: #0c1423;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.page-three-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-three-text {
+  width: 50%;
+  padding-bottom: 50px;
+}
+.page-three-text p {
+  padding-left: 70px;
+}
+.page-three-text h4 {
+  padding-bottom: 20px;
+}
+
+.page-three-text:nth-child(2n) {
+  padding-left: 40px;
+}
+
+.index i {
+  background-color: #86e0f9;
+  color: #0c1423;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.page-five {
+  background-color: #0c1423;
+}
+
+.page-five .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 90px 0;
+}
+
+.page-five img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.page-five-info {
+  margin-left: 100px;
+}
+.page-five-info p {
+  padding-bottom: 50px;
+}
+.page-five-info h3 {
+  padding-bottom: 25px;
+}
+
+.page-six {
+  background-color: #0f614e;
+}
+
+.page-six-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
+}
+.page-six-info img {
+  width: 31%;
+}
+
 .blog header {
-  background-image: url(./under-the-sea-assets/blog-header.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(./under-the-sea-assets/blog-header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./under-the-sea-assets/blog-header.jpg);
   height: 50vh;
   background-size: cover;
 }
@@ -510,6 +672,10 @@ footer p {
 .blog .aside-info-paragraphs ul li {
   list-style: disc;
   list-style-position: inside;
+}
+
+.blog section h2 {
+  padding-bottom: 30px;
 }
 
 .info h3 {
