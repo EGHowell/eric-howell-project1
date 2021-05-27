@@ -441,6 +441,10 @@ button {
   margin-top: 20px;
 }
 
+button:hover {
+  background-color: gray;
+}
+
 footer {
   background-color: #86e0f9;
   position: relative;
@@ -757,7 +761,6 @@ footer p {
 
 .right-side {
   position: absolute;
-  bottom: 0px;
   right: -80px;
 }
 
@@ -785,15 +788,150 @@ footer p {
 }
 
 .contact .social-icons {
+  padding-bottom: 10px;
+}
+
+.contact .social-icons a {
   font-family: "Barlow", sans-serif;
   font-size: 32px;
   letter-spacing: 1px;
   color: #ffffff;
-}
-.contact .social-icons i {
   padding: 10px;
 }
 
-.contact i:first-child {
+.contact a:first-child {
   padding-left: 0;
+}
+
+.contact a:hover {
+  color: #86e0f9;
+}
+
+@media (max-width: 1780px) {
+  .right-side {
+    right: 0;
+  }
+}
+@media (max-width: 1229px) {
+  .contact nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .contact header {
+    height: auto;
+  }
+  .contact header nav {
+    padding-bottom: 20px;
+  }
+
+  .right-side {
+    position: revert;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-top: 20px;
+  }
+
+  .contact main {
+    height: auto;
+  }
+
+  .contact section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact aside {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -ms-flex-item-align: start;
+        align-self: start;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .contact button {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .contact textarea {
+    height: 10em;
+    width: 30em;
+  }
+}
+@media (max-width: 725px) {
+  .contact .background-design {
+    padding: 0;
+  }
+
+  .contact input {
+    width: 30%;
+  }
+
+  .contact textarea {
+    width: 20em;
+  }
+}
+@media (max-width: 540px) {
+  .contact input {
+    width: 65%;
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 415px) {
+  .contact textarea {
+    width: 15em;
+  }
+
+  .contact button {
+    margin: 10px 0;
+  }
+
+  .contact input, textarea {
+    background-color: #0c1423;
+  }
+
+  .contact form {
+    background-color: #0c1423;
+  }
+
+  .contact button {
+    background-color: #86e0f9;
+    color: black;
+  }
+
+  .contact .background-design {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .contact aside {
+    margin-top: 50px;
+    padding-left: 0;
+  }
+
+  .contact header nav {
+    padding-bottom: 0;
+  }
+  .contact header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact header nav ul li {
+    padding: 0;
+    margin-top: 0;
+  }
 }

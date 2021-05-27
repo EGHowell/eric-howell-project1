@@ -16,7 +16,6 @@
 }
 .right-side {
     position: absolute;
-    bottom: 0px;
     right: -80px;
 }
 .right-side h2 {
@@ -33,16 +32,21 @@
     padding: 50px 50px 10px 50px;
 }
 
+
 // Site info
 .contact .site-info {
     @include  body;
 }
-.contact .social-icons{
-    @include h4;
-    i {
-        padding: 10px;
-    }
+.contact .social-icons {
+    padding-bottom: 10px;
 }
-.contact i:first-child{
+.contact .social-icons a{
+    @include h4;
+    padding: 10px;
+}
+.contact a:first-child{
     padding-left: 0;
+}
+.contact a:hover {
+    color: $color2;
 }

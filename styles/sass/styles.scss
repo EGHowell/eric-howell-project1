@@ -1,6 +1,13 @@
+// Variables
 @import 'variables';
+
+// Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap');
+
+// CSS setup
 @import 'setup';
+
+// Site wide CSS
 @import 'general';
 
 // Index page
@@ -12,4 +19,7 @@
 // Contact page
 @import 'contact';
 
-@import 'media';
+// Media queries
+@import 'media-index';
+@import 'media-blog';
+@import 'media-contact';

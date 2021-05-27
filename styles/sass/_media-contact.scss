@@ -1,0 +1,104 @@
+// Contact page
+@media (max-width: 1780px) {
+    .right-side {
+        right: 0;
+    }
+}
+
+@media (max-width: 1229px) {
+    .contact nav ul {
+        justify-content: center;
+    }
+    .contact header {
+        height: auto;
+        nav {
+            padding-bottom: 20px;
+        }
+    }
+    .right-side {
+        position: revert;
+        align-self: center;
+        padding-top: 20px;
+    }
+    .contact main {
+        height: auto;
+    }
+    .contact section {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact aside {
+        order: 0;
+        align-self: start;
+        padding-left: 30px;
+        padding-bottom: 30px
+    }
+}
+
+@media (max-width: 900px) {
+    .contact button {
+        width: 50%;
+        margin: 10px auto;
+    }
+    .contact textarea {
+        height: 10em;
+        width: 30em;
+    }
+}
+
+@media (max-width: 725px) {
+    .contact .background-design {
+        padding: 0;
+    }
+    .contact input {
+        width: 30%;
+    }
+    .contact textarea{
+        width: 20em;
+    }
+}
+
+@media (max-width: 540px) {
+    .contact input{
+        width: 65%;
+        margin-right: 0;
+        padding-left: 0;
+        margin-left: 0; 
+    }
+}
+
+@media (max-width: 415px) {
+    .contact textarea {
+        width: 15em;
+    }
+    .contact button {
+        margin: 10px 0;
+    }
+    .contact input, textarea {
+        background-color: $color4;
+    }
+    .contact form{
+        background-color: $color4;
+    }
+    .contact button {
+        background-color: $color2;
+        color: black;
+    }
+    .contact .background-design {
+        box-shadow: none;
+    }
+    .contact aside {
+        margin-top: 50px;
+        padding-left: 0;
+    }
+    .contact header nav {
+        padding-bottom: 0;
+        ul {
+            flex-direction: column;
+            li {
+                padding: 0;
+                margin-top: 0;
+            }
+        }
+    }
+}
