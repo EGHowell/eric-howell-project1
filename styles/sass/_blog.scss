@@ -9,20 +9,6 @@
 .blog main {
     background-color: $color4;
 }
-.blog .main {
-    display: flex;
-    justify-content: space-between;
-}
-.blog section {
-    width: 60%;
-    position: relative;
-    bottom: 300px;
-    margin-bottom:-330px;
-    .background-design{
-        width: 116%;
-        height: 20%;
-    }
-}
 
 // Aside
 .blog aside {
@@ -53,6 +39,25 @@
         color: $color1;
         a {
             @include body;
+    }
+}
+.blog .aside-info-paragraphs a:hover {
+    color: $color2;
+}
+
+// .Main
+.blog .main {
+    display: flex;
+    justify-content: space-between;
+}
+.blog section {
+    width: 60%;
+    position: relative;
+    bottom: 300px;
+    margin-bottom:-330px;
+    .background-design{
+        width: 116%;
+        height: 20%;
     }
 }
 

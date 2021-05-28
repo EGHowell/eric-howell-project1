@@ -621,26 +621,6 @@ footer p {
   background-color: #0c1423;
 }
 
-.blog .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.blog section {
-  width: 60%;
-  position: relative;
-  bottom: 300px;
-  margin-bottom: -330px;
-}
-.blog section .background-design {
-  width: 116%;
-  height: 20%;
-}
-
 .blog aside {
   width: 30%;
   margin-top: 150px;
@@ -677,6 +657,30 @@ footer p {
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
+}
+
+.blog .aside-info-paragraphs a:hover {
+  color: #86e0f9;
+}
+
+.blog .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog section {
+  width: 60%;
+  position: relative;
+  bottom: 300px;
+  margin-bottom: -330px;
+}
+.blog section .background-design {
+  width: 116%;
+  height: 20%;
 }
 
 .blog section h2 {
