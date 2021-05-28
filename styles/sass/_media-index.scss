@@ -117,4 +117,10 @@
     .index .page-three-text:nth-child(2n) {
         padding-left: 0;
     }
+    .index .page-six img:first-child {
+        display: none;
+    }
+    .index .page-six img {
+        width: 45%;
+    }
 }

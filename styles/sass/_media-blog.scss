@@ -37,8 +37,20 @@
 }
 
 @media (max-width: 600px) {
+    .blog header {
+        height: auto;
+        ul {
+            padding-bottom: 10px;
+            li{
+                margin-top: 10px;
+            }
+        }
+    }
     .blog .main {
         flex-direction: column;
+        h2 {
+            padding-top: 0;
+        }
     }
     .blog aside {
         order: 1;
@@ -53,6 +65,7 @@
     }
     .blog section {
         width: 100%;
+        position:initial;
         .background-design {
             box-shadow: none;
         }

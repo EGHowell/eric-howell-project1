@@ -971,6 +971,14 @@ footer p {
   .index .page-three-text:nth-child(2n) {
     padding-left: 0;
   }
+
+  .index .page-six img:first-child {
+    display: none;
+  }
+
+  .index .page-six img {
+    width: 45%;
+  }
 }
 @media (max-width: 1595px) {
   .blog aside img {
@@ -1013,11 +1021,24 @@ footer p {
   }
 }
 @media (max-width: 600px) {
+  .blog header {
+    height: auto;
+  }
+  .blog header ul {
+    padding-bottom: 10px;
+  }
+  .blog header ul li {
+    margin-top: 10px;
+  }
+
   .blog .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .blog .main h2 {
+    padding-top: 0;
   }
 
   .blog aside {
@@ -1038,6 +1059,7 @@ footer p {
 
   .blog section {
     width: 100%;
+    position: initial;
   }
   .blog section .background-design {
     -webkit-box-shadow: none;
