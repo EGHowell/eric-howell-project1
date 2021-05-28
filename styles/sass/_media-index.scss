@@ -1,0 +1,120 @@
+@media (max-width: 1600px) {
+    .index .page-one {
+        height: 50vh;
+        div {
+            top: 90px;
+        }
+    }
+    .index .page-two-text {
+        padding-top: 50px;
+    }
+    .index .page-two-addition img {
+        margin-right: 100px
+    }
+    .index .page-two-nemo img {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .index .page-one {
+        height: auto;
+        div {
+            position: initial;
+            padding: 100px;
+        }
+    }
+    .index .page-two-addition,
+    .index .page-two-nemo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .index .page-two-addition {
+        padding-top: 45px;
+    }
+    .index .page-two img {
+        position: revert;
+        margin: 0;
+    }
+    .index .page-two-text {
+        text-align: center;
+        padding-bottom: 45px;
+        padding-top: 50px;
+        p {
+            padding-bottom: 15px;
+        }
+    }
+        .page-two-nemo div:nth-child(2) {
+        text-align: center;
+    }
+    .index .page-three-text p {
+        padding-left: 0;
+    }
+    .index .page-five-all {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        img {
+            width: 45%;
+        }
+    }
+    .index .page-five-info {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 815px) {
+    .index header {
+        height: auto;
+        img {
+            position: initial;
+            width: 100%;
+        }
+    }
+    .index .header-info {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .index .background-design {
+        box-shadow: -10px 10px $color2;
+    }
+    .index .background-design2 {
+        box-shadow: 10px 10px $color2;
+    }
+    
+}
+
+@media (max-width: 440px) {
+    .index h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .index nav {
+        padding-bottom: 0;
+        ul {
+            flex-direction: column;
+            li {
+                padding: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    .index .header-info {
+        margin-top:0;
+    }
+    .index .page-one div {
+        padding: 25px;
+    }
+    .index .page-three {
+        padding-top: 40px;
+    }
+    .index .page-three-text {
+        width: 100%;
+    }
+    .index .page-three-text:nth-child(2n) {
+        padding-left: 0;
+    }
+}
