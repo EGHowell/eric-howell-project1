@@ -251,7 +251,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1600px;
+  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
 }
@@ -621,6 +621,10 @@ footer p {
   background-color: #0c1423;
 }
 
+.blog .wrapper {
+  max-width: 1600px;
+}
+
 .blog aside {
   width: 30%;
   margin-top: 150px;
@@ -842,7 +846,7 @@ footer p {
   }
   .index .page-one div {
     position: initial;
-    padding: 100px;
+    padding: 50px;
   }
 
   .index .page-two-addition,
@@ -1061,6 +1065,7 @@ footer p {
   .blog section {
     width: 100%;
     position: initial;
+    margin-bottom: 50px;
   }
   .blog section .background-design {
     -webkit-box-shadow: none;
