@@ -495,6 +495,62 @@ footer p {
   text-align: center;
 }
 
+@media (max-width: 440px) {
+  #dropbtn {
+    display: block;
+  }
+
+  .index nav,
+.blog nav,
+.contact nav {
+    display: none;
+    padding-bottom: 0;
+    background-color: #0f614e;
+    z-index: 10;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    text-align: right;
+    width: 120px;
+    border-radius: 15px 0 0 15px;
+    border: 2px solid #ffffff;
+    border-right: none;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+  }
+  .index nav ul,
+.blog nav ul,
+.contact nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .index nav ul li,
+.blog nav ul li,
+.contact nav ul li {
+    margin-top: 0;
+    padding: 0;
+  }
+  .index nav ul li a,
+.blog nav ul li a,
+.contact nav ul li a {
+    padding-left: 6px;
+  }
+
+  nav ul li:hover {
+    background-color: #0c1423;
+  }
+
+  nav ul li:hover:first-child {
+    border-radius: 17px 0 0 0;
+  }
+
+  nav ul li:hover:last-child {
+    border-radius: 0 0 0 17px;
+  }
+}
 .index header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./under-the-sea-assets/header-image.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./under-the-sea-assets/header-image.jpg);
@@ -1154,55 +1210,7 @@ footer p {
     padding-left: 25px;
   }
 }
-@media (max-width: 425px) {
-  .blog nav {
-    display: none;
-    padding-bottom: 0;
-    background-color: #0f614e;
-    z-index: 10;
-    position: fixed;
-    top: 70px;
-    right: 0;
-    text-align: right;
-    width: 120px;
-    border-radius: 15px 0 0 15px;
-    border: 2px solid #ffffff;
-    border-right: none;
-    -webkit-animation-duration: 0.4s;
-            animation-duration: 0.4s;
-  }
-  .blog nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    padding-bottom: 0;
-  }
-  .blog nav ul li {
-    margin-top: 0;
-    padding: 0;
-  }
-  .blog nav ul li a {
-    padding-left: 6px;
-  }
-
-  .blog nav ul li:hover {
-    background-color: #0c1423;
-  }
-
-  .blog nav ul li:hover:first-child {
-    border-radius: 17px 0 0 0;
-  }
-
-  .blog nav ul li:hover:last-child {
-    border-radius: 0 0 0 17px;
-  }
-
-  .blog #dropbtn {
-    display: block;
-  }
-
+@media (max-width: 440px) {
   .blog section h2 {
     padding-bottom: 0;
     padding-top: 20px;
@@ -1298,52 +1306,16 @@ footer p {
     margin-left: 0;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 440px) {
   .contact header nav {
-    display: none;
     padding-bottom: 0;
-    background-color: #0f614e;
-    z-index: 10;
-    position: fixed;
-    top: 70px;
-    right: 0;
-    text-align: right;
-    width: 120px;
-    border-radius: 15px 0 0 15px;
-    border: 2px solid #ffffff;
-    border-right: none;
-    -webkit-animation-duration: 0.4s;
-            animation-duration: 0.4s;
   }
-  .contact header nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .contact header nav ul li {
+
+  .contact .right-side {
     padding: 0;
-    margin-top: 0;
   }
-  .contact header nav ul li a {
-    padding-left: 6px;
-  }
-
-  .contact nav ul li:hover {
-    background-color: #0c1423;
-  }
-
-  .contact nav ul li:hover:first-child {
-    border-radius: 17px 0 0 0;
-  }
-
-  .contact nav ul li:hover:last-child {
-    border-radius: 0 0 0 17px;
-  }
-
-  .contact #dropbtn {
-    display: block;
+  .contact .right-side h2 {
+    line-height: 75px;
   }
 
   .contact aside {
