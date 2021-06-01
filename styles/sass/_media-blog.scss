@@ -77,12 +77,18 @@
 }
 
 @media (max-width: 425px) {
-    .blog nav ul {
-        flex-direction: column;
-        li {
-            margin-top: 0;
-            padding: 0;
+    .blog nav {
+        display: none;
+        ul {
+            flex-direction: column;
+            li {
+                margin-top: 0;
+                padding: 0;
+            }
         }
+    }  
+    .blog #dropbtn {
+        display: block;
     }
     .blog section h2{
         padding-bottom: 0;

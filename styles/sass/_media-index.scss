@@ -92,15 +92,25 @@
         font-size: 100px;
         line-height: 100px;
     }
+    .index #dropbtn {
+        display: block;
+    }
     .index nav {
         padding-bottom: 0;
+        background-color: $color4;
+        z-index: 10;
         ul {
+            display: none;
             flex-direction: column;
             li {
                 padding: 0;
                 margin-top: 0;
             }
         }
+    }
+    .index header h1 {
+        font-size: 70px;
+        line-height: 65px;
     }
     .index .header-info {
         margin-top:0;

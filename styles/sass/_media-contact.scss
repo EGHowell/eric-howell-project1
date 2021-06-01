@@ -68,6 +68,24 @@
 }
 
 @media (max-width: 415px) {
+    .contact header nav {
+        display: none;
+        padding-bottom: 0;
+        ul {
+            flex-direction: column;
+            li {
+                padding: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    .contact #dropbtn {
+        display: block;
+    }
+    .contact aside {
+        margin-top: 50px;
+        padding-left: 0;
+    }
     .contact textarea {
         width: 15em;
     }
@@ -86,19 +104,5 @@
     }
     .contact .background-design {
         box-shadow: none;
-    }
-    .contact aside {
-        margin-top: 50px;
-        padding-left: 0;
-    }
-    .contact header nav {
-        padding-bottom: 0;
-        ul {
-            flex-direction: column;
-            li {
-                padding: 0;
-                margin-top: 0;
-            }
-        }
     }
 }

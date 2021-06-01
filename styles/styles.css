@@ -291,6 +291,46 @@ nav ul li a:hover {
   color: #86e0f9;
 }
 
+/* w3schools animated menu icon*/
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#dropbtn {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  display: none;
+  background-color: #86e0f9;
+  border-radius: 48%;
+  padding: 10px;
+  z-index: 20;
+}
+
+#dropbtn:hover {
+  background-color: #0f614e;
+  border: 2px solid #86e0f9;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 .background-design {
   -webkit-box-shadow: -30px 30px #86e0f9;
           box-shadow: -30px 30px #86e0f9;
@@ -942,10 +982,17 @@ footer p {
     line-height: 100px;
   }
 
+  .index #dropbtn {
+    display: block;
+  }
+
   .index nav {
     padding-bottom: 0;
+    background-color: #0c1423;
+    z-index: 10;
   }
   .index nav ul {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -954,6 +1001,11 @@ footer p {
   .index nav ul li {
     padding: 0;
     margin-top: 0;
+  }
+
+  .index header h1 {
+    font-size: 70px;
+    line-height: 65px;
   }
 
   .index .header-info {
@@ -1077,6 +1129,9 @@ footer p {
   }
 }
 @media (max-width: 425px) {
+  .blog nav {
+    display: none;
+  }
   .blog nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1086,6 +1141,10 @@ footer p {
   .blog nav ul li {
     margin-top: 0;
     padding: 0;
+  }
+
+  .blog #dropbtn {
+    display: block;
   }
 
   .blog section h2 {
@@ -1184,6 +1243,30 @@ footer p {
   }
 }
 @media (max-width: 415px) {
+  .contact header nav {
+    display: none;
+    padding-bottom: 0;
+  }
+  .contact header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact header nav ul li {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .contact #dropbtn {
+    display: block;
+  }
+
+  .contact aside {
+    margin-top: 50px;
+    padding-left: 0;
+  }
+
   .contact textarea {
     width: 15em;
   }
@@ -1208,24 +1291,5 @@ footer p {
   .contact .background-design {
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-
-  .contact aside {
-    margin-top: 50px;
-    padding-left: 0;
-  }
-
-  .contact header nav {
-    padding-bottom: 0;
-  }
-  .contact header nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact header nav ul li {
-    padding: 0;
-    margin-top: 0;
   }
 }
