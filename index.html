@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <script src="https://kit.fontawesome.com/ca23dd92c0.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="index">
 
@@ -19,6 +23,7 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+
         <div id="dropbtn">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -37,9 +42,9 @@
     </header>
 
     <main>
-        <section class="page-one" >
+        <section class="page-one" id="about">
             <div class="wrapper">
-                <h3 id="about">WHAT IS UNDER THE SEA</h3>
+                <h3>WHAT IS UNDER THE SEA</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde dicta laborum, numquam nemo in quo hic nobis ipsum atque corporis natus illo possimus delectus porro exercitationem nam perspiciatis? Obcaecati, deserunt.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit incidunt, rerum ducimus nostrum quos aut molestias veniam asperiores deserunt repellat quaerat facilis quisquam iure architecto est dolores sunt at commodi!</p>
                 <a class="find" href="#">FIND OUT MORE</a>
                 </div>
@@ -123,16 +128,20 @@
     <script>
         const burgerMenu = document.getElementById('dropbtn');
         burgerMenu.addEventListener('click', function (event) {
-            const menuShow = document.querySelector('ul');
+            const menuShow = document.querySelector('nav');
             if (menuShow.style.display === "block") {
                 menuShow.style.display = "none";
             } else {
                 menuShow.style.display = "block";
             }
-            updateTask(burgerMenu);
+            updateIcon(burgerMenu);
+            addAnimation(menuShow);
         });
 
-        function updateTask(element) {
+        function addAnimation(element) {
+            element.classList.add('animate__animated', 'animate__slideInRight');
+        }
+        function updateIcon(element) {
             element.classList.toggle('change');
         }
     </script>

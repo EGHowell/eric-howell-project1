@@ -96,17 +96,39 @@
         display: block;
     }
     .index nav {
+        display: none;
         padding-bottom: 0;
-        background-color: $color4;
+        background-color: $color3;
         z-index: 10;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        text-align: right;
+        width: 120px;
+        border-radius: 15px 0 0 15px;
+        border: 2px solid $color1;
+        border-right: none;
+        animation-duration: 0.4s;
         ul {
-            display: none;
             flex-direction: column;
+            text-align: center;
             li {
                 padding: 0;
                 margin-top: 0;
+                a {
+                    padding-left: 6px;
+                }
             }
         }
+    }
+    .index nav ul li:hover {
+        background-color: $color4;
+    }
+    .index nav ul li:hover:first-child {
+        border-radius: 17px 0 0 0;
+    }
+    .index nav ul li:hover:last-child {
+        border-radius: 0 0 0 17px;
     }
     .index header h1 {
         font-size: 70px;
@@ -116,7 +138,8 @@
         margin-top:0;
     }
     .index .page-one div {
-        padding: 25px;
+        padding: 65px 25px 25px 25px;
+
     }
     .index .page-three {
         padding-top: 40px;
