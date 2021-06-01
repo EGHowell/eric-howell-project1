@@ -102,31 +102,13 @@
                 </form>
             </section>
         </div>
-        
-        <footer>
-            <p>Copyright &copy; 2021 Juno College</p>
-        </footer>
-
-        <script>
-            const burgerMenu = document.getElementById('dropbtn');
-            burgerMenu.addEventListener('click', function() {
-                const menuShow = document.querySelector('nav');
-                if (menuShow.style.display === "block") {
-                    menuShow.style.display = "none";
-                } else {
-                    menuShow.style.display = "block";
-                }
-                updateTask(burgerMenu);
-                addAnimation(menuShow);
-            });
-
-            function addAnimation(element) {
-                    element.classList.add('animate__animated', 'animate__slideInRight');
-                }
-            function updateTask(element){
-                element.classList.toggle('change');
-            } 
-        </script>
     </main>
+
+    <footer>
+        <p>Copyright &copy; 2021 Juno College</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    
 </body>
 </html>
