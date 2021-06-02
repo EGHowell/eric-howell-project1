@@ -54,7 +54,7 @@
             <section>
                 <h2>BLOG</h2>
                 <img  class="background-design" src="./styles/under-the-sea-assets/blog-post-image.jpg" alt="A beautiful coral reef surrounded by various species of fish">
-                <div class="info">
+                <article class="info">
                     <h3>DISCOVERING NEW SPECIES</h3>
                     <p>Monday May 4th, 2019 by Dieula</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni tenetur aut iure fuga aliquam doloribus ad ratione fugiat nostrum! Nam totam ut non quia quasi ad nulla! Incidunt, voluptatem?
@@ -70,33 +70,34 @@
                     Laudantium, pariatur quam debitis voluptatibus quisquam incidunt? Necessitatibus, sed. Perferendis, voluptas laudantium quidem nam natus repellendus perspiciatis vero quaerat, neque cum cumque quisquam placeat quasi nisi reiciendis mollitia dolore incidunt.
                     Tenetur, fuga quae aliquid illum iste id placeat enim incidunt, magni quibusdam quia, obcaecati alias velit quos minima voluptates commodi cumque ea voluptatem tempora dicta? Natus molestias itaque tempore facere!
                     <p>
-                </div>
+                    </article>
         
-                <div class="comments">
+                <article class="comments">
                     <h3>COMMENTS:</h3>
-                    <div class="comments-all">
+                    <article class="comments-all">
                         <img src="./styles/under-the-sea-assets/comment-1.jpg" alt="A person with beautiful curly hair">
                         <div class="comments-info">
                             <p>Tuesday October 9th, 2018 by Julia</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fuga id maiores. Exercitationem modi provident explicabo, atque eligendi libero voluptas? Doloremque laborum voluptatem ipsam, modi temporibus neque velit maiores ullam!</p>
                         </div>
-                    </div>
-                    <div class="comments-all">
+                    </article>
+                    <article class="comments-all">
                         <img src="./styles/under-the-sea-assets/comment-2.jpg" alt="A regular looking person standing near a wall">
                         <div class="comments-info">
                             <p>Wednesday October 10th, 2018 by Meg</p>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis iste eum odit doloremque minima recusandae, alias temporibus obcaecati eius ad consequatur aliquid tempore accusantium cum doloribus beatae voluptates maiores mollitia.</p>
                         </div>
-                    </div>
-                </div>
+                    </article>
+                </article>
 
                 <form action="submit.php" method="POST">
                     <fieldset>
                         <label for="name" class="visuallyHidden">name</label>
                         <input type="text" name="use-name" id="name" placeholder="Name">
-                        <label for="email" class="visuallyHidden"></label>
+                        <label for="email" class="visuallyHidden">email</label>
                         <input type="email" name="user-email" id="email" placeholder="Email address">
                     </fieldset>
+                    <label for="comments" class="visuallyHidden">comment</label>
                     <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
                     <button type="submit">POST COMMENT</button>
                 </form>

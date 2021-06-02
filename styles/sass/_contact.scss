@@ -34,6 +34,9 @@
 
 
 // Site info
+.contact aside p {
+    @include h4;
+}
 .contact .site-info {
     @include  body;
 }

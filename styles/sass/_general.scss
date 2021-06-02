@@ -202,9 +202,10 @@ footer {
         border: 2px solid $color1;
         border-right: none;
         animation-duration: 0.4s;
-        ul {
+            ul {
             flex-direction: column;
             text-align: center;
+            padding: 0;
             li {
                 margin-top: 0;
                 padding: 0;
@@ -214,13 +215,19 @@ footer {
             }
         }
     }
-    nav ul li:hover {
+    .index nav ul li:hover,
+    .blog nav ul li:hover,
+    .contact nav ul li:hover {
         background-color: $color4;
     }
-    nav ul li:hover:first-child {
+    .index nav ul li:hover:first-child,
+    .blog nav ul li:hover:first-child,
+    .contact nav ul li:hover:first-child {
         border-radius: 17px 0 0 0;
     }
-    nav ul li:hover:last-child {
+    .index nav ul li:hover:last-child,
+    .blog nav ul li:hover:last-child,
+    .contact nav ul li:hover:last-child {
         border-radius: 0 0 0 17px;
     }
 }

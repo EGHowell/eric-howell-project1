@@ -81,10 +81,19 @@
         padding-bottom: 0;
         padding-top: 20px;
     }
+    .blog header ul {
+        padding-bottom: 0;
+        li {
+            margin-top: 0;
+        }
+    }
     .blog .comments-all {
         padding: 20px 0;
     }
     .blog .comments p:first-child {
         font-size: 25px;
+    }
+    .blog .comments-info p:last-child {
+        margin-left: -85px;
     }
 }
